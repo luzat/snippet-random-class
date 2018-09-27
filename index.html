@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo Random-CSS-Klasse</title>
+    <style>
+        h1 { font-weight: normal; }
+        .random-1 { color: red; font-weight: bold; font-size: 5em; }
+        .random-2 { color: blue; font-stretch: condensed; text-transform: uppercase; font-size: 2.5em; }
+        .random-3 { color: orange; font-style: italic; font-size: 10em; }
+        .random-4 { /* ... */ }
+    </style>
+</head>
+<body>
+    <!-- Für beliebige Ganzzahlen x (im Beispiel 1-4 inklusive) wird eine Klasse random-x zugewiesen -->
+    <h1 data-random="[1, 4]">Zufallsformatierung</h1>
+    <!-- Einmal am Ende des body bzw. nach allen data-random-Elementen einbinden (async ist optional): -->
+    <script async src="random.js"></script>
+</body>
+</html>
